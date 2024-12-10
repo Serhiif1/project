@@ -1,0 +1,17 @@
+@import "./layouts/reset";
+
+@import "./layouts/header";
+@import "./layouts/burger";
+@import "./layouts/main";
+@import "./layouts/infinity";
+@import "./layouts/join";
+@import "./layouts/explore";
+@import "./layouts/subscribe";
+@import "./layouts/footer";
+@import "./layouts/notification";
+
+@import "./layouts/media";
+
+.container {
+    padding: 0px 120px;
+}

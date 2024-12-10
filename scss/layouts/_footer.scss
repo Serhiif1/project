@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        &-logo {
+            margin-right: 170px;
+        }
+        &-nav {
+            display: flex;
+            gap: 46px;
+            &-item {
+                & a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #020305;
+                }
+            }
+        }
+        &-safety {
+            display: flex;
+            gap: 46px;
+            &-item {
+                & a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #020305;
+                }
+            }
+        }
+    }
+    &_bottom {
+        margin-top: 80px;
+        text-align: center;
+        & a {
+            color: #5c5050;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: underline;
+
+            &:hover {
+                color: #020305;
+            }
+        }
+    }
+}

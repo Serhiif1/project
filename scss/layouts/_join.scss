@@ -1,0 +1,38 @@
+.join {
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+    }
+    &_title {
+        font-size: 64px;
+        max-width: 575px;
+        margin-right: 250px;
+    }
+    &_list {
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 74px;
+        margin-bottom: 100px;
+        &-item {
+            max-width: 340px;
+            &-img {
+                border-radius: 24px;
+                padding: 30px 28px 24px 28px;
+                background-color: #a9c2cb;
+            }
+            &-title {
+                color: #020305;
+                font-weight: 900;
+                font-size: 24px;
+                margin: 20px 0px 10px 0px;
+            }
+            &-subtitle {
+                color: #020305;
+                line-height: 33px;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.infinity {
+    margin: 100px 0;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-around;
+        gap: 7%;
+        align-items: center;
+        animation: scrollLeft 50s linear infinite;
+        width: max-content;
+    }
+
+    img {
+        margin-right: 20px;
+        width: auto;
+        height: auto;
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

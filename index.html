@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+
+        <link rel="stylesheet" href="./css/styles.min.css" />
+        <title>ODYSSEY - Main universe</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header_wrapper">
+                    <a href="#">
+                        <img
+                            src="../assets/svg/logo.svg"
+                            alt=""
+                            class="header_logo"
+                        />
+                    </a>
+                    <div class="header_nav">
+                        <ul class="header_nav-list">
+                            <li class="header_nav-list-item">
+                                <a href="#">Stay Connected</a>
+                            </li>
+                            <li class="header_nav-list-item">
+                                <a href="#">Education</a>
+                            </li>
+                            <li class="header_nav-list-item">
+                                <a href="#">Community</a>
+                            </li>
+                            <li class="header_nav-list-item">
+                                <a href="#">About Us</a>
+                            </li>
+                        </ul>
+                        <button class="header_nav-btn">Sign in</button>
+                    </div>
+                    <div class="burger" id="burger">
+                        <img src="../assets/svg/burger.svg" alt="" />
+                    </div>
+                    <div class="overlay hidden" id="overlay"></div>
+                    <nav class="menu hidden" id="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a href="#">Stay Connected</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#">Education</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#">Community</a>
+                            </li>
+                            <li class="menu_list-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <button class="header_nav-btn">Sign in</button>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main_wrapper">
+                    <div class="main_top">
+                        <!-- <img src="" alt="" class="main_top-img" /> -->
+                        <h1 class="main_top-title">
+                            Unveiling the Wonders of the Universe
+                        </h1>
+                    </div>
+                    <div class="main_bottom">
+                        <div class="main_bottom-descr">
+                            At odissey, our mission is to inspire, educate, and
+                            ignite your passion for the cosmos. We are your
+                            premier destination for all things related to space
+                            exploration, astronomy, and the mysteries of the
+                            universe. Whether you're a seasoned astronomer or a
+                            curious novice, join us on a journey to the furthest
+                            reaches of the cosmos.
+                        </div>
+                        <div class="main_bottom-buttons">
+                            <button class="main_bottom-buttons-black">
+                                Get Started</button
+                            ><button class="main_bottom-buttons-white">
+                                Watch Video
+                                <img
+                                    class="main_bottom-buttons-white-img"
+                                    src="../assets/svg/play.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="main_absolute">
+                        <img
+                            src="../assets/img/astro.png"
+                            alt=""
+                            class="main_absolute-astro"
+                        />
+                        <div class="main_absolute-exercising">
+                            <div class="main_absolute-exercising-name">
+                                <img
+                                    src="../assets/svg/white_heart.svg"
+                                    alt=""
+                                    class="main_absolute-exercising-name-img"
+                                />
+                                <div
+                                    class="main_absolute-exercising-name-title"
+                                >
+                                    Exercising
+                                </div>
+                            </div>
+                            <img
+                                src="../assets/svg/pulse.svg"
+                                alt=""
+                                class="main_absolute-exercising-img"
+                            />
+                        </div>
+                        <div class="main_absolute-spacewalks">
+                            <div class="main_absolute-spacewalks-name">
+                                <img
+                                    src="../assets/svg/diagram.svg"
+                                    alt=""
+                                    class="main_absolute-spacewalks-name-img"
+                                />
+                                <div
+                                    class="main_absolute-spacewalks-name-title"
+                                >
+                                    Spacewalks
+                                </div>
+                            </div>
+                            <div class="main_absolute-spacewalks-imgs">
+                                <img
+                                    src="../assets/svg/graph.svg"
+                                    alt=""
+                                    class="main_absolute-spacewalks-imgs-graph"
+                                />
+                                <img
+                                    src="../assets/svg/round_diagram.svg"
+                                    alt=""
+                                    class="main_absolute-spacewalks-imgs-round"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="main_absolute-timer">
+                            <div class="main_absolute-timer-name">
+                                <img
+                                    src="../assets/svg/watch.svg"
+                                    alt=""
+                                    class="main_absolute-timer-name-img"
+                                />
+                                <div class="main_absolute-timer-name-title">
+                                    Total time in space
+                                </div>
+                            </div>
+                            <div class="main_absolute-timer-time" id="timer">
+                                0D 0H 0M 0S
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="infinity">
+            <div class="container">
+                <div class="infinity_wrapper">
+                    <img src="../assets/img/spacex.png" alt="SpaceX" />
+                    <img src="../assets/img/nasa.png" alt="NASA" />
+                    <img src="../assets/img/boeing.png" alt="Boeing" />
+                    <img src="../assets/img/astroscale.png" alt="Astroscale" />
+                    <img src="../assets/img/spacex.png" alt="SpaceX" />
+                    <img src="../assets/img/nasa.png" alt="NASA" />
+                    <img src="../assets/img/boeing.png" alt="Boeing" />
+                    <img src="../assets/img/astroscale.png" alt="Astroscale" />
+                    <img src="../assets/img/spacex.png" alt="SpaceX" />
+                    <img src="../assets/img/nasa.png" alt="NASA" />
+                    <img src="../assets/img/boeing.png" alt="Boeing" />
+                    <img src="../assets/img/astroscale.png" alt="Astroscale" />
+                </div>
+            </div>
+        </section>
+        <section class="join">
+            <div class="container">
+                <div class="join_wrapper">
+                    <h2 class="join_title">
+                        Join our vibrant community of space enthusiasts where
+                        you can
+                    </h2>
+                    <ul class="join_list">
+                        <li class="join_list-item">
+                            <img
+                                src="../assets/svg/physics.svg"
+                                alt=""
+                                class="join_list-item-img"
+                            />
+                            <div class="join_list-item-title">
+                                Astronomy 101
+                            </div>
+                            <div class="join_list-item-subtitle">
+                                Dive into the basics of astronomy. Learn about
+                                stars, planets, galaxies, and the tools
+                                astronomers use to explore the universe.
+                            </div>
+                        </li>
+                        <li class="join_list-item">
+                            <img
+                                src="../assets/svg/clipboard.svg"
+                                alt=""
+                                class="join_list-item-img"
+                            />
+                            <div class="join_list-item-title">
+                                Latest Discoveries
+                            </div>
+                            <div class="join_list-item-subtitle">
+                                Stay up-to-date with the most recent
+                                breakthroughs and discoveries in the field of
+                                astrophysics and space exploration.
+                            </div>
+                        </li>
+                        <li class="join_list-item">
+                            <img
+                                src="../assets/svg/telescope.svg"
+                                alt=""
+                                class="join_list-item-img"
+                            />
+                            <div class="join_list-item-title">
+                                Space Exploration
+                            </div>
+                            <div class="join_list-item-subtitle">
+                                Explore the latest missions, both past and
+                                present, from NASA, ESA, SpaceX, and other space
+                                agencies and organizations.
+                            </div>
+                        </li>
+                        <li class="join_list-item">
+                            <img
+                                src="../assets/svg/sphere.svg"
+                                alt=""
+                                class="join_list-item-img"
+                            />
+                            <div class="join_list-item-title">
+                                Space Technology
+                            </div>
+                            <div class="join_list-item-subtitle">
+                                Delve into the cutting-edge technology powering
+                                space exploration, from spacecraft and
+                                telescopes to propulsion systems and space
+                                habitats.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <div class="explore_wrapper">
+                    <!-- <img src="" alt="" class="explore_img"> -->
+                    <h3 class="explore_title">
+                        We are committed to making space science accessible to
+                        all. Explore our educational resources, including
+                    </h3>
+
+                    <div class="explore_list">
+                        <div class="explore_list-item">
+                            <div class="explore_list-item-number">01.</div>
+                            <div class="explore_list-item-title">
+                                Online free courses and tutorials
+                            </div>
+                            <div class="explore_list-item-subtitle">
+                                Dive into the basics of astronomy. Learn about
+                                stars, planets, galaxies, and the tools
+                                astronomers use to explore the universe.
+                            </div>
+                        </div>
+                        <div class="explore_list-item">
+                            <div class="explore_list-item-number">02.</div>
+                            <div class="explore_list-item-title">
+                                Resources for teachers and educators
+                            </div>
+                            <div class="explore_list-item-subtitle">
+                                Delve into the cutting-edge technology powering
+                                space exploration, from spacecraft and
+                                telescopes to propulsion systems and space
+                                habitats.
+                            </div>
+                        </div>
+                        <div class="explore_list-item">
+                            <div class="explore_list-item-number">03.</div>
+                            <div class="explore_list-item-title">
+                                Book recommendations and reviews
+                            </div>
+                            <div class="explore_list-item-subtitle">
+                                Dive into the basics of astronomy. Learn about
+                                stars, planets, galaxies, and the tools
+                                astronomers use to explore the universe.
+                            </div>
+                        </div>
+                        <div class="explore_list-item">
+                            <div class="explore_list-item-number">04.</div>
+                            <div class="explore_list-item-title">
+                                Book recommendations and reviews
+                            </div>
+                            <div class="explore_list-item-subtitle">
+                                Dive into the basics of astronomy. Learn about
+                                stars, planets, galaxies, and the tools
+                                astronomers use to explore the universe.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe_wrapper">
+                    <h3 class="subscribe_title">Join our community</h3>
+                    <div class="subscribe_subtitle">
+                        of stargazers, explorers, and cosmic enthusiasts as we
+                        embark on a journey through the cosmos like never
+                        before.
+                    </div>
+                    <form id="subscribe-form" class="subscribe_form">
+                        <input
+                            type="email"
+                            id="email"
+                            class="subscribe_form-input"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button type="submit" class="subscribe_form-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="notification" id="notification">
+                Thank you for subscribing to ODYSSEY!
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <a href="#">
+                        <img
+                            src="../assets/svg/logo_mini.svg"
+                            alt=""
+                            class="footer_top-logo"
+                        />
+                    </a>
+                    <ul class="footer_top-nav">
+                        <li class="footer_top-nav-item">
+                            <a href="#">Stay Connected</a>
+                        </li>
+                        <li class="footer_top-nav-item">
+                            <a href="#">Education</a>
+                        </li>
+                        <li class="footer_top-nav-item">
+                            <a href="#">Community</a>
+                        </li>
+                        <li class="footer_top-nav-item">
+                            <a href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_top-safety">
+                        <li class="footer_top-safety-item">
+                            <a href="#">Privacy policy</a>
+                        </li>
+                        <li class="footer_top-safety-item">
+                            <a href="#">Terms & Agreements</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <a class="footer_bottom-contact" href="#"
+                        >[contact@odyssey.com]</a
+                    >.
+                </div>
+            </div>
+        </footer>
+        <script src="./js/burger.js"></script>
+        <script src="./js/timer.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script src="./js/slider.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script src="./js/form.js"></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+.main {
+    &_wrapper {
+        padding: 20px 0px;
+        position: relative;
+    }
+    &_top {
+        padding: 60px;
+        border-radius: 40px;
+        background-image: url("../../../assets/img/main_bg.png");
+        background-size: cover;
+        &-title {
+            font-weight: 900;
+            color: #fff;
+            font-size: 64px;
+            max-width: 410px;
+            padding-bottom: 170px;
+        }
+    }
+    &_bottom {
+        &-descr {
+            font-size: 18px;
+            line-height: 33px;
+            margin: 40px 0;
+            max-width: 700px;
+        }
+        &-buttons {
+            display: flex;
+            gap: 77px;
+            &-black {
+                text-align: center;
+                font-size: 18px;
+                padding: 26px 55px;
+                color: #fff;
+                background: #0d0f12;
+                border-radius: 20px;
+                border: 2px solid transparent;
+                transition: all 0.4s;
+
+                &:hover {
+                    color: #0d0f12;
+                    background: #fff;
+                    border: 2px solid #0d0f12;
+                    transition: all 0.3s;
+                }
+            }
+            &-white {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                background: transparent;
+                margin-top: 3px;
+                font-weight: 600;
+
+                &:hover {
+                    color: #0d0f12;
+                    background: #fff;
+                    text-decoration: underline;
+                    transition: all 0.3s;
+                }
+                &-img {
+                    padding: 8px 5px 3px 5px;
+                    background: #a9c2cb;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+    &_absolute {
+        &-astro {
+            position: absolute;
+            top: 20px;
+            right: 55px;
+            -webkit-filter: drop-shadow(50px 00px 100px #0000008a);
+            filter: drop-shadow(50px 0px 100px #0000008a);
+        }
+        &-exercising {
+            position: absolute;
+            top: 27%;
+            right: 6%;
+            max-width: 266px;
+            max-height: 145px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 20px 39px -12px #63757c20;
+            background: #fff;
+            &-name {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+                &-img {
+                    padding: 8px 5px 3px 5px;
+                    background: #a9c2cb;
+                    border-radius: 15px;
+                }
+                &-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            &-img {
+            }
+        }
+        &-spacewalks {
+            position: absolute;
+            top: 409px;
+            right: 544px;
+            max-width: 337px;
+            max-height: 200px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 20px 39px -12px #63757c20;
+            background: #fff;
+            &-name {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+                &-img {
+                    padding: 8px 5px 3px 5px;
+                    background: #a9c2cb;
+                    border-radius: 15px;
+                }
+                &-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            &-imgs {
+                display: flex;
+                gap: 12px;
+                &-graph {
+                }
+                &-round {
+                }
+            }
+        }
+        &-timer {
+            position: absolute;
+            bottom: 0;
+            right: 192px;
+            width: 464px;
+            max-height: 130px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 20px 39px -12px #63757c20;
+            background: #020305;
+            &-name {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+                &-img {
+                    padding: 8px 5px 3px 5px;
+                    background: #a9c2cb;
+                    border-radius: 15px;
+                }
+                &-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+            &-time {
+                font-size: 24px;
+                font-weight: 900;
+                text-align: right;
+                letter-spacing: 0.5em;
+                color: #fff;
+            }
+        }
+    }
+}

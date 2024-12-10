@@ -1,0 +1,40 @@
+.header {
+    padding: 60px 0px;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_nav {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        &-list {
+            display: flex;
+            gap: 48px;
+            &-item {
+                & a {
+                    font-size: 18px;
+                    color: #020305;
+                }
+            }
+        }
+        &-btn {
+            text-align: center;
+            font-size: 18px;
+            padding: 22px 52px;
+            color: #fff;
+            background: #0d0f12;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            transition: all 0.4s;
+
+            &:hover {
+                color: #000;
+                background: #fff;
+                border: 2px solid #000;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
